@@ -9,7 +9,7 @@ function App() {
     <div className="center">
       <h1>Soccer Players</h1>
       <PlayerForm /> 
-      <PlayerList />
+      <PlayerList  />
     </div>
   );
 }
