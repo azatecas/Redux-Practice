@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { postPlayer } from '../actions';
 
 const PlayerForm = (props) => {
 
@@ -16,7 +17,8 @@ const PlayerForm = (props) => {
 
     }
     const submitHandler = e => {
-        
+        e.preventDefault();
+        props.postPlayer(player);
     }
 
     return (
@@ -68,5 +70,5 @@ const mapStateToProps = (state) => {
 
 export default connect(
     mapStateToProps,
-    {}
+    { postPlayer }
 )(PlayerForm);
