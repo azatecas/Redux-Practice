@@ -20,7 +20,6 @@ export const fetchPlayer = () => dispatch => {
         })
 }
 
-
 export const POST_DATA = "POST_DATA";
 export const POST_SUCCESS = "POST_SUCCESS";
 export const POST_FAIL = "POST_FAIL";
