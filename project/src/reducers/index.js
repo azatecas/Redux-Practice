@@ -2,16 +2,14 @@
 const initialState = {
     players: [],
     isFetching: false,
-    error: ""
+    errors: ""
 }
 
 //setup an empty reducer
 const playerReducer = (state = initialState, action) => {
     switch (action.type) {
-        case value:
-            
-            break;
-    
+        case action:            
+            return state;    
         default:
             return state;
     }
